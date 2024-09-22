@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(normalize.css);
+@import url(Contacto.css);
+@import url(Footer.css);
+
+
+body{
+        background-image: url(../Imagen/fondo\ galeria.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+    
+}
+
+.conser{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 90px;
+}
+
+
+
+.cont-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 0px 20px;
+    margin-top: 150px;
+   
+
+    
+}
+
+.ser-descr{
+    width: 33%;
+    padding-left: 15px;
+    text-align: left;
+    border-left: crimson 2px solid;
+    align-content: center;
+    background: rgba(0, 0, 0, 0.653);
+}
+
+    .ser-imagen{
+        display: flex;
+        flex-wrap: wrap;
+        background: rgba(0, 0, 0, 0.653);
+    }
+
+
+.ser-imagen img{
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    
+}
+.ser-descr h3{
+    font-size: 2em;
+    font-weight: 100;
+    color: white;
+    letter-spacing: 4px;
+}
+.ser-descr h3 span{
+    font-size: 18px;
+}
+.ser-descr ul{
+    list-style-type: none;
+    color: crimson;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+
+.ser-descr p{
+    
+    padding-right: 50px;
+    color: white;
+}
+
+
+@media (max-width:840px){
+    .ser-imagen img{
+        width: 200px;
+        height: 150px;
+        
+    }
+    .ser-imagen{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 80px;
+        }
+    .conser{
+        justify-content: space-around;
+    }    
+    .cont-servicios{
+        margin-bottom: 380px;
+    }
+}
+@media (max-width:780px){
+    .cont-servicios{
+        margin-bottom: 360px;
+    }
+}
+
+@media (max-width:480px){
+    .cont-servicios{
+    width: 480px;
+}
+.ser-imagen{
+    margin-top: 50px;
+}
+}
