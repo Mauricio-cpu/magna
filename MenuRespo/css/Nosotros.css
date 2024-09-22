@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(normalize.css);
+@import url(Index.css);
+@import url(Contacto.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: none;
+    background-color: black;
+}
+
+.banner{
+background-image: url(../Imagen/fondo\ nosotros.jpeg);
+height: 470px;
+margin-top: 50px;
+
+}
+
+
+
+/*  MISION Y vISION*/
+
+
+.banner .mision{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.mision div{
+    margin-top: 250px;
+    width: 35%;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 1px;
+    border-bottom: rgb(60, 130, 162) solid 5px;
+}
+.mision h3{
+    color: crimson;
+}
+
+/* ARTICLE CONTENIDO */
+
+.parrafos{
+    border-left: 5px solid rgb(60, 130, 162);
+}
+.parrafos p{
+    margin-left: 10px;
+}
+
+.Art-cont{
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: px;
+    padding: 100px 110px 50px 110px;
+    text-align: justify;
+}
+
+/*  ARTICLE FILAS*/
+
+.contenido img{
+    width: 100px;
+}
+.contenido .img1{
+    margin-left: 50px;
+}
+.contenido .img2{
+    margin-left: 22px;
+}
+.contenido .img3{
+    margin-left: 10px;
+}
+.contenido .img4{
+    margin-left: 10px;
+}
+.contenido .img5{
+    margin-left: 55px;
+}
+.contenido .img6{
+    margin-left: 80px;
+}
+
+.nos-cont{
+    width: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFFFFF;
+    justify-items: center;
+    }
+
+.nos-cont .card{
+    position: relative;
+}
+.nos-cont .card .cara{
+    width: 300px;
+    height: 200px;
+    transition: .5s;
+}
+
+.nos-cont .card .cara.cara1{
+    position: relative;
+    background: rgb(60, 130, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.nos-cont .card:hover .cara.cara1{
+transform: translateY(0);
+background: crimson;
+}
+
+
+.nos-cont .card .cara.cara1 .contenido{
+    opacity: 0.7;
+    transition: .5s;
+}
+.nos-cont .card:hover .cara.cara1 .contenido{
+    opacity: 1;
+}
+.nos-cont .card .cara.cara1 .contenido h3{
+    font-weight: 300;
+    color: #FFFFFF;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+
+.nos-cont .card .cara.cara2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0, .8);
+    transform: translateY(-100px);
+}
+.nos-cont .card:hover .cara.cara2{
+    transform: translateY(0);
+}
+
+.nos-cont .card .cara.cara2 .contenido p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/*-----RESPONSIVE-----*/
+
+@media (max-width: 950px){
+    .nos-cont{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 450px;
+        position: relative;
+    }
+    .mision div{
+        margin-top: 100px;
+    }
+}
+@media (max-width: 669px)
+{
+    .mision div{
+        margin-top: 70px;
+        width: 45%;
+    }
+}
+
+@media (max-width: 638px){
+    .mision h3{
+        font-size: 1em;
+    }
+.banner .mision{
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 486px){
+    .mision div{
+        margin-top: 50px;
+        width: 47%;
+}
+    .mision div p{
+        font-size: 14px;
+}
+    .Art-cont {
+        width: auto;
+        padding: 15px;
+    }
+}
